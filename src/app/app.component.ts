@@ -1,11 +1,9 @@
-// зробити запит на ендпоінт https://jsonplaceholder.typicode.com/users
-//   відобразити всіх юзерів.
-//   Компоненти App-Users->User
+// выводите всех юзеров, под каждым юзером его посты (все разделяете на компоненты, делаете сервисы и интерфейсы)
 //
-//
-// зробити запит на ендпоінт https://jsonplaceholder.typicode.com/posts
-//   відобразити всі пости.
-//   Компоненти App-Posts->Post
+// кто не знает как с плейсхолдера вытянуть массив постов по id юзера:
+//   http://jsonplaceholder.typicode.com/posts?userId=1 посты юзера с id 1
+//     http://jsonplaceholder.typicode.com/posts?userId=2 посты юзера с id 2
+//       и тд...
 
 
 import {Component} from '@angular/core';
