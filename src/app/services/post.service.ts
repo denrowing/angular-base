@@ -13,10 +13,12 @@ export class PostService {
 
   posts: Post[] = [];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+
+  }
 
   getPosts(): Observable<Post[]> {
-    return  this.httpClient.get<Post[]>(this.url);
+    return this.httpClient.get<Post[]>(this.url);
   }
 
 }
