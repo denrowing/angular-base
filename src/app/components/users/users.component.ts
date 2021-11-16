@@ -20,5 +20,4 @@ export class UsersComponent implements OnInit {
     this.userService.getUsers().subscribe(value => this.users = value)
   }
 
-
 }
