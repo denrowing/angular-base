@@ -1,8 +1,8 @@
 <div>
   <div>{{'id: '}} {{user.id}}</div>
-  <div>{{'name: '}} {{user.name}}</div>
+  <div>{{'name: '}} {{user.name}}
 <!--  <p>{{'username: '}} {{user.username}}</p>-->
-  <div>{{'email: '}} {{user.email}}</div>
+  {{'email: '}} {{user.email}}</div>
 <!--  <p>{{'address: '}} {{user.address.street}}</p>-->
 <!--  <p>{{'suite: '}} {{user.address.suite}}</p>-->
 <!--  <p>{{'city: '}} {{user.address.city}}</p>-->
@@ -15,5 +15,5 @@
 <!--  <p>{{'catchPhrase: '}} {{user.company.catchPhrase}}</p>-->
 <!--  <p>{{'bs: '}} {{user.company.bs}}</p>-->
   <div>{{'****************************************'}}</div>
-  <a routerLink="{{user.id}}">details</a>
+  <button (click)="navTo(user.id)">Click here</button>
 </div>
