@@ -9,6 +9,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
+import { PostComponent } from './components/post/post.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { PostDetailsComponent } from './components/post-details/post-details.com
     PostsComponent,
     CommentsComponent,
     UserDetailsComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,11 @@ import { PostDetailsComponent } from './components/post-details/post-details.com
         ]
       },
 
-      {path: 'posts', component: PostsComponent},
+      {path: 'posts', component: PostsComponent,
+        children: [
+          {path:':id', component: PostDetailsComponent}
+        ]
+      },
       {path: 'comments', component: CommentsComponent}
     ])
   ],
