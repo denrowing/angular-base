@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {User} from "../../models/User";
-import {Post} from "../../models/Post";
 
 @Component({
   selector: 'app-user',
@@ -11,7 +10,7 @@ export class UserComponent implements OnInit {
 
   @Input()
   user: User
-  post: Post
+  // post: Post
   constructor() { }
 
   ngOnInit(): void {
