@@ -11,13 +11,10 @@ export class PostDetailsComponent implements OnInit {
 
   post: IPost
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
-    // this.activatedRoute.params.subscribe(
-    //   value => {
-    //     this.post = this.router.getCurrentNavigation()?.extras.state as IPost;
-    //   }  )
-    this.activatedRoute.data.subscribe(value => this.post = value['data'])
-
-
+    this.activatedRoute.params.subscribe(
+      value => {
+        this.post = this.router.getCurrentNavigation()?.extras.state as IPost;
+      }  )
   }
 
   ngOnInit(): void {
