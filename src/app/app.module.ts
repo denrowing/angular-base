@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import {TestGuard} from "./guards/test.guard";
 import { FormsComponent } from './components/forms/forms.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { PostComponent } from './components/post/post.component';
 
 const routes: Route[] = [
   {path: '', redirectTo: 'posts', pathMatch: 'full'},
@@ -38,7 +39,8 @@ const routes: Route[] = [
     UserDetailsComponent,
     PostDetailsComponent,
     HomeComponent,
-    FormsComponent
+    FormsComponent,
+    PostComponent
   ],
     imports: [
         BrowserModule,

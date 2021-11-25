@@ -3,7 +3,6 @@ import {UserService} from "./user.service";
 import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from "@angular/router";
 import {IUser} from "../interfaces/user.interface";
 import {Observable} from "rxjs";
-import {delay} from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
